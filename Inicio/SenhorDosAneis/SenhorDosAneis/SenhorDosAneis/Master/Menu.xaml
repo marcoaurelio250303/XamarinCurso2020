@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:pag="clr-namespace:SenhorDosAneis.Pages"
+             x:Class="SenhorDosAneis.Master.Menu">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#0D1F2D">
+            <StackLayout>
+                <StackLayout BackgroundColor="#FFC926" Padding="30">
+                    <Image  Source="LOTR.jpg" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100" WidthRequest="100"/>
+                    <!---->
+                </StackLayout>
+                <ScrollView Orientation="Both">
+                    <StackLayout Spacing="20">
+                        <Button Text="Aragourn" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Arwen" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Barbarvore" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Beregond" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Bilbo" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Boromir" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Celeborn" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Denethor" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Eomer" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Elrond" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Elendil" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Eldarion" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Frodo" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Faramir" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Fredegar" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Galadriel" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Gamling" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Gimli" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Glorfindel" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Gollum" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Grima" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Harry" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Laracna" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Legolas" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Pippin" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Meriadoc" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Balrog" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Nazgul" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Samwise" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Sauron " Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Saruman" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Reibruxo" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Radagast" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Velho_Salgueiro" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Tom_Bombadil" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                        <Button Text="Theoden" Clicked="GoConteudo" BackgroundColor="Transparent" TextColor="White" FontSize="17"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pag:Principal/>
+            </x:Arguments>
+        </NavigationPage>        
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

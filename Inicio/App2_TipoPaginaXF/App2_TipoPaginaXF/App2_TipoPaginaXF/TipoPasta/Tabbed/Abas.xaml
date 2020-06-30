@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2_TipoPaginaXF.TipoPasta.Tabbed.Abas"
+             xmlns:nav="clr-namespace:App2_TipoPaginaXF.TipoPasta.Caroucel.Navigation">
+    <NavigationPage Title="Item 1">
+        <x:Arguments>
+            <nav:Page1 IconImageSource="Page1.jpg"/>
+        </x:Arguments>        
+    </NavigationPage>
+    <nav:Page2 IconImageSource="LOTR.png" />
+    
+
+</TabbedPage>

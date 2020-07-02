@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ListaFacil.Telas.Inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Blue" HeightRequest="250">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Image Source="tarefa2.png" Aspect="AspectFit" />
+                </StackLayout>
+                <Label Text="quinta dia 22 - 02 " TextColor="White" HorizontalOptions="Start" VerticalOptions="End" FontSize="15"/>
+            </StackLayout> 
+            <StackLayout x:Name="SLTarefas" Padding="10" Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="15">
+                    <Image VerticalOptions="Center"/>
+                    <Label VerticalOptions="Center" Text="Task 1" HorizontalOptions="FillAndExpand"/>
+                    <Image VerticalOptions="Center"/>
+                    <Image VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="15">
+                    <Image VerticalOptions="Center"/>
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                        <Label Text="Finalizado em 20/01/2018 - 17:00h" TextColor="Gray" FontSize="8" />
+                        <Label Text="Task 1" TextColor="LightGray" />
+                    </StackLayout>
+                    <Image VerticalOptions="Center"/>
+                    <Image VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+            <Button Text="Adicionar" Clicked ="ActionGoCadastro" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,7 +10,7 @@ namespace ListaFacil
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ListaFacil.Telas.Inicio());
         }
 
         protected override void OnStart()
@@ -27,5 +27,6 @@ namespace ListaFacil
         {
             // Handle when your app resumes
         }
+
     }
 }

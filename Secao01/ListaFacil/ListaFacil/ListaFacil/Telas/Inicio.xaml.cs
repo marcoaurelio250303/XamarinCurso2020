@@ -1,6 +1,7 @@
 ﻿using ListaFacil.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace ListaFacil.Telas
         public Inicio()
         {
             InitializeComponent();
-            DataHoje.Text = DateTime.Now.DayOfWeek.ToString() + "," + DateTime.Now.ToString("MM/yyyy");
+            CultureInfo culture = new CultureInfo("pt-BR");
+            DataHoje.Text = DateTime.Now.ToString($"dddd, dd {"de"} MMMM {"de"} yyyy", culture);
             CarregarTarefas();
         }
         public void ActionGoCadastro(object sender, EventArgs args)

@@ -11,7 +11,7 @@
                 <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                     <Image Source="tarefa2.png" Aspect="AspectFit" />
                 </StackLayout>
-                <Label Text="quinta dia 22 - 02 " TextColor="White" HorizontalOptions="Start" VerticalOptions="End" FontSize="15"/>
+                <Label Text="" x:Name="DataHoje" TextColor="White" HorizontalOptions="Start" VerticalOptions="End" FontSize="15"/>
             </StackLayout> 
             <StackLayout x:Name="SLTarefas" Padding="10" Spacing="10">
                 <StackLayout Orientation="Horizontal" Spacing="15">

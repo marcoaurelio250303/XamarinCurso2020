@@ -11,7 +11,7 @@
             <Entry x:Name="TxtNome"/>
             <Label Text="Prioridade" FontAttributes="Bold"/>
             <StackLayout x:Name="SLPrioridades">
-                <StackLayout Orientation="Horizontal" Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="10" >
                    <Image HorizontalOptions="Center">
                         <Image.Source>
                             <OnPlatform x:TypeArguments="ImageSource">
@@ -20,7 +20,10 @@
                             </OnPlatform>
                         </Image.Source>
                     </Image>
-                    <Label Text="Urgente e importante" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Urgente e importante" HorizontalOptions="FillAndExpand" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelectAction"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal"   Spacing="10">
                     <Image HorizontalOptions="Center">
@@ -31,7 +34,10 @@
                             </OnPlatform>
                         </Image.Source>
                     </Image>
-                    <Label Text="Urgente e não importante" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Urgente e não importante" HorizontalOptions="FillAndExpand" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelectAction"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout  Orientation="Horizontal" Spacing="10">
                     <Image >
@@ -42,7 +48,10 @@
                             </OnPlatform>
                         </Image.Source>
                     </Image>
-                    <Label Text="Não Urgente e importante" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Não Urgente e importante" HorizontalOptions="FillAndExpand" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelectAction"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout  Orientation="Horizontal"  Spacing="10">
                     <Image>
@@ -53,10 +62,13 @@
                             </OnPlatform>
                         </Image.Source>
                     </Image>
-                    <Label Text="Não Urgente e Não importante" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Não Urgente e Não importante" HorizontalOptions="FillAndExpand" TextColor="Gray"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelectAction"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </StackLayout>
-            <Button Text="OK" HorizontalOptions="End" BackgroundColor="Blue" TextColor="White"/>
+            <Button Text="OK" HorizontalOptions="End" BackgroundColor="Blue" TextColor="White" Clicked="SalvarAction"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

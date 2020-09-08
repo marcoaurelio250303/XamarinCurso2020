@@ -21,11 +21,29 @@ namespace App1_Cell.Menu
         public  void GoPagina1(object sender, EventArgs arg)
         {
             Detail = new NavigationPage(new TextCellPage());
+            IsPresented = false;
         }
 
         public void GoPagina2(object sender, EventArgs arg)
         {
             Detail = new NavigationPage(new ImageCeallPage());
+            IsPresented = false;
+        }
+        public void GoPagina3(object sender, EventArgs arg)
+        {
+            Detail = new NavigationPage(new EntryCellPage());
+            IsPresented = false;
+        }
+
+        public void GoPagina4(object sender, EventArgs arg)
+        {
+            Detail = new NavigationPage(new SwitchCellPage());
+            IsPresented = false;
+        }
+        public void GoPagina5(object sender, EventArgs arg)
+        {
+            Detail = new NavigationPage(new ViewCellPage());
+            IsPresented = false;
         }
     }
 }

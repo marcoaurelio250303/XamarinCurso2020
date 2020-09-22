@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemix.Android", "Cinemix\Cinemix.Android\Cinemix.Android.csproj", "{80FCF55B-DF3E-4426-93DD-48CE0115B68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemix", "Cinemix\Cinemix\Cinemix.csproj", "{1AE564B6-D176-475E-A10A-AE62351785C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FCF55B-DF3E-4426-93DD-48CE0115B68D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE564B6-D176-475E-A10A-AE62351785C8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABF23757-3B54-41B7-86CC-B873B8E024A6}
+	EndGlobalSection
+EndGlobal

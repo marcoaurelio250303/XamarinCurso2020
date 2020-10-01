@@ -11,16 +11,26 @@ using Xamarin.Forms.Xaml;
 namespace Vagas.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CadastroVagas : ContentPage
+    public partial class EditarVaga : ContentPage
     {
-        public CadastroVagas()
+        private Vaga vaga { get; set; }
+        public EditarVaga(Vaga vaga)
         {
             InitializeComponent();
-
+            
+            this.vaga = vaga;
+            NomeVaga.Text = vaga.NomeVaga;
+            Quantidade.Text = vaga.Quantidade.ToString();
+            Salario.Text = vaga.Salario.ToString()    ;
+            Telefone.Text = vaga.Telefone;
+            TipoContratacao.IsToggled = (vaga.TipoContratacao == "CLT") ? false : true;
+            Descricao.Text = vaga.Descricao;
+            Cidade.Text = vaga.Cidade;
+            Email.Text = vaga.Email;
+            Empresa.Text = vaga.Empresa;
         }
         public void SalvarAction(object sender, EventArgs args)
         {
-            var vaga = new Vaga();
             vaga.NomeVaga = NomeVaga.Text;
             vaga.Quantidade = short.Parse(Quantidade.Text);
             vaga.Salario = double.Parse(Salario.Text);
@@ -34,7 +44,7 @@ namespace Vagas.Paginas
             var database = new DataBase();
             database.Cadastro(vaga);
 
-            App.Current.MainPage = new NavigationPage(new ConsultaVagas());
+            App.Current.MainPage = new NavigationPage(new MinhasVagasCadastradas());
 
         }
     }

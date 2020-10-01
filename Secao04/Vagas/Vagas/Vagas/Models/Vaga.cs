@@ -17,7 +17,7 @@ namespace Vagas.Models
         public string Cidade { get; set; }
         public string Descricao { get; set; }
         public double Salario { get; set; }
-        public bool TipoContratacao { get; set; }
+        public string TipoContratacao { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
     }

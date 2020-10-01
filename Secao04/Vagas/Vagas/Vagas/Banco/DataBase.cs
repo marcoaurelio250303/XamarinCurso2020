@@ -31,7 +31,7 @@ namespace Vagas.Banco
         {
             _conexao.Update(vaga);
         }
-        public List<Vaga> Consultar(Vaga vaga)
+        public List<Vaga> Consultar()
         {
             return _conexao.Table<Vaga>().ToList();
         }
